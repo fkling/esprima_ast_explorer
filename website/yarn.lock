@@ -3844,6 +3844,11 @@ commander@2.9.x:
   dependencies:
     graceful-readlink ">= 1.0.0"
 
+commander@^10.0.0:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-10.0.1.tgz#881ee46b4f77d1c1dccc5823433aa39b022cbe06"
+  integrity sha512-y4Mg2tXshplEbSGzx7amzPwKKOCGuoSRP/CjEdwwk0FOGlUbq6lKuoyDZTNZkmxHdJtp54hdfY/JUrdL7Xfdug==
+
 commander@^2.12.1, commander@^2.20.0, commander@^2.5.0, commander@~2.20.3:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
@@ -7205,6 +7210,13 @@ lines-and-columns@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
+
+liquidjs@^10.10.2:
+  version "10.10.2"
+  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-10.10.2.tgz#e49da58989de3f00fcad0e613c1e589d76abec2f"
+  integrity sha512-UcuTUexKg/8CmX6I5KNghk13pl3c8Rqhm+WSWqrc17pQP9LjpYPpOLDKG9OMBeHDBQ70yyn/GOqyZ/EKJ4z5yg==
+  dependencies:
+    commander "^10.0.0"
 
 load-json-file@^2.0.0:
   version "2.0.0"
