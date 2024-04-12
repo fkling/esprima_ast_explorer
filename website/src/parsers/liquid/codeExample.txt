@@ -1,0 +1,11 @@
+{% assign people = "alice, bob, carol" | split: ", " -%}
+
+<ul>
+{%- for person in people %}
+  <li>
+    <a href="{{person | prepend: "http://example.com/"}}">
+      {{ person | capitalize }}
+    </a>
+  </li>
+{%- endfor%}
+</ul>
