@@ -48,6 +48,7 @@
     "@babel/eslint-parser": "~7.13.0",
     "@babel/runtime": "^7.16.3",
     "@creditkarma/thrift-parser": "^1.2.0",
+    "@djot/djot": "^0.3.1",
     "@gengjiawen/monkey-wasm": "^0.7.0",
     "@glimmer/compiler": "^0.83.1",
     "@glimmer/syntax": "^0.83.1",
