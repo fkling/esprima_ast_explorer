@@ -1196,6 +1196,11 @@
   resolved "https://registry.yarnpkg.com/@creditkarma/thrift-parser/-/thrift-parser-1.2.0.tgz#69b47dff3d2a5211e9417ff543ea65f681821906"
   integrity sha512-mSRxjSXvU6sBfWhMBWXl7H/XEKWHQ7x+MUDLwyeFIwwX9UaZKPOc7TgGd0N78kcZtIMk82ArdxO6aFhqnBuNtg==
 
+"@djot/djot@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@djot/djot/-/djot-0.3.1.tgz#9809897bb9b882d87d7d27976dd5fdb35e02af0b"
+  integrity sha512-jFYDPI8xLo7lz4V28ZaGRW+0E6lhRPijxNEb6Dj00Vo8twCd4Yb0A7Fug8clYTe1Le2ghl/uUcKGGTsN/avmHA==
+
 "@eslint/eslintrc@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-1.1.0.tgz#583d12dbec5d4f22f333f9669f7d0b7c7815b4d3"
