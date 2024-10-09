@@ -60,6 +60,8 @@ export default {
   getDefaultOptions() {
     return {
       preserveWhitespaces: false,
+      collectCommentNodes: false,
+      escapedString: false,
     };
   },
 };
