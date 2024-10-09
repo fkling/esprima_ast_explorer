@@ -60,6 +60,8 @@ export default {
   getDefaultOptions() {
     return {
       preserveWhitespaces: false,
+      collectCommentNodes: false,
+      escapedString: false,
     };
   },
 };
@@ -124,6 +126,11 @@ function fixSpan(ast, code) {
 
         return offset;
       }
+      case 'SwitchBlock':
+      case 'SwitchBlockCase':
+      case 'SwitchBlockDefault':
+      case 'ForLoopBlock':
+      case 'IfBlockBranch':
       case 'BoundText':
         return parent.sourceSpan.start.offset;
       default:

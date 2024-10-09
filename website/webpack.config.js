@@ -216,6 +216,9 @@ module.exports = Object.assign({
           path.join(__dirname, 'node_modules', 'tslint'),
           path.join(__dirname, 'node_modules', 'tslib'),
           path.join(__dirname, 'node_modules', 'svelte'),
+          path.join(__dirname, 'node_modules', '@angular', 'compiler'),
+          path.join(__dirname, 'node_modules', '@angular-eslint', 'template-parser'),
+          path.join(__dirname, 'node_modules', '@angular-eslint', 'bundled-angular-compiler'),
           path.join(__dirname, 'src'),
         ],
         loader: 'babel-loader',
@@ -226,6 +229,7 @@ module.exports = Object.assign({
               require.resolve('@babel/preset-env'),
               {
                 targets: {
+                  esmodules: true,
                   browsers: ['defaults'],
                 },
                 modules: 'commonjs',
