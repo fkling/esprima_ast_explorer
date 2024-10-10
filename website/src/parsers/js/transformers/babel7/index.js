@@ -1,8 +1,20 @@
 import compileModule from '../../../utils/compileModule';
 import pkg from 'babel7/package.json';
-
 const ID = 'babelv7';
 
+function checkForTypescript(data) {
+  if (data.includes("typescript")) {
+      return true;
+  }
+  for (let item of data) {
+      if (Array.isArray(item)) {
+          if (checkForTypescript(item)) {
+              return true;
+          }
+      }
+  }
+  return false;
+}
 export default {
   id: ID,
   displayName: ID,
@@ -14,46 +26,22 @@ export default {
   loadTransformer(callback) {
     require([
       '../../../transpilers/babel',
+      '../../../transpilers/typescript',
       'babel7',
       'recast',
-    ], (transpile, babel, recast) => callback({ transpile: transpile.default, babel, recast }));
+      '../../babylon7.js',
+    ], (transpile, transpileTs, babel, recast, babylon7) => callback({ transpile: transpile.default, transpileTs: transpileTs.default, babel, recast, babylon7 }));
   },
 
-  transform({ transpile, babel, recast }, transformCode, code) {
-    transformCode = transpile(transformCode);
+  transform({ transpile, transpileTs, babel, recast, babylon7 }, transformCode, code) {
+    transformCode = checkForTypescript(babylon7.parserOptions) ? transpileTs(transformCode, babylon7.parserOptions) : transpile(transformCode, babylon7.parserOptions);
     let transform = compileModule( // eslint-disable-line no-shadow
       transformCode,
     );
-
     return babel.transformAsync(code, {
       parserOpts: {
         parser: recast.parse,
-        plugins: [
-          'asyncGenerators',
-          'bigInt',
-          'classPrivateMethods',
-          'classPrivateProperties',
-          'classProperties',
-          ['decorators', {decoratorsBeforeExport: false}],
-          'doExpressions',
-          'dynamicImport',
-          'exportDefaultFrom',
-          'exportNamespaceFrom',
-          'flow',
-          'flowComments',
-          'functionBind',
-          'functionSent',
-          'importMeta',
-          'jsx',
-          'logicalAssignment',
-          'nullishCoalescingOperator',
-          'numericSeparator',
-          'objectRestSpread',
-          'optionalCatchBinding',
-          'optionalChaining',
-          ['pipelineOperator', {proposal: 'minimal'}],
-          'throwExpressions',
-        ],
+        plugins: babylon7.parserOptions,
       },
       retainLines: false,
       generatorOpts: {

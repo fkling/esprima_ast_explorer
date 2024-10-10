@@ -106,7 +106,7 @@ export const parserSettingsConfiguration = {
     }
   ],
 };
-
+export let parserOptions = []
 export default {
   ...defaultParserInterface,
 
@@ -140,6 +140,7 @@ export default {
           return plugin;
       }
     });
+    parserOptions = options.plugins
     return babylon.parse(code, options);
   },
 
