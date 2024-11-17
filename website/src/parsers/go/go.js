@@ -7,7 +7,7 @@ export default {
 
   id: ID,
   displayName: ID,
-  version: '1.13.4',
+  version: '1.23.3',
   homepage: 'https://golang.org/pkg/go/',
   _ignoredProperties: new Set(['_type']),
   locationProps: new Set(['Loc']),

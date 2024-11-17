@@ -70,8 +70,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/core@^7.1.6", "@babel/core@^7.16.0", "babel7@npm:@babel/core@^7":
-  name babel7
+"@babel/core@^7.1.6", "@babel/core@^7.16.0":
   version "7.19.0"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.19.0.tgz#d2f5f4f2033c00de8096be3c9f45772563e150c3"
   integrity sha512-reM4+U7B9ss148rh2n1Qs9ASS+w94irYXga7c2jaQv9RVzpS7Mv1a9rnYYwuDa45G+DkORt9g6An2k/V4d9LbQ==
@@ -368,7 +367,7 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.0.0", "@babel/parser@^7.1.6", "@babel/parser@^7.10.4", "@babel/parser@^7.18.10", "@babel/parser@^7.19.0", "@babel/parser@^7.8.4", "babylon7@npm:@babel/parser@^7":
+"@babel/parser@^7.0.0", "@babel/parser@^7.1.6", "@babel/parser@^7.10.4", "@babel/parser@^7.18.10", "@babel/parser@^7.19.0", "@babel/parser@^7.8.4":
   version "7.19.0"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.19.0.tgz#497fcafb1d5b61376959c1c338745ef0577aa02c"
   integrity sha512-74bEXKX2h+8rrfQUfsBfuZZHzsEs6Eql4pqy/T4Nn6Y9wNPggQOqD6z6pn5Bl8ZfysKouFZT/UXEH94ummEeQw==
@@ -2120,10 +2119,10 @@ ast-types@0.9.6:
   resolved "https://registry.yarnpkg.com/ast-types/-/ast-types-0.9.6.tgz#102c9e9e9005d3e7e3829bf0c4fa24ee862ee9b9"
   integrity sha1-ECyenpAF0+fjgpvwxPok7oYu6bk=
 
-astexplorer-go@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/astexplorer-go/-/astexplorer-go-1.0.0.tgz#b871657b1e84eecc8d8d4ea27a8da310fa8624dc"
-  integrity sha512-1pK63GodoGdzow6JNNvOnMNsqR1Vpq59vFk5Y/ZeyXlU6U8PtBC0Lm0i4QI6wIN9xUaY2AnB/MXVuXBsi6LWpQ==
+astexplorer-go@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/astexplorer-go/-/astexplorer-go-1.1.0.tgz#45cf78ab3a36563ae685c881dccef0d36f9abc1a"
+  integrity sha512-eOuwXGxo825hQFSgXZYEy0/M7PTdxcoB+L6xErf5vaYapdIHKB1mLktu+DJN3W32Mg9TBJ6i3RKhP1Y/voYHhA==
 
 astexplorer-refmt@^1.0.1:
   version "1.0.1"
@@ -2186,7 +2185,7 @@ babel-code-frame@^6.16.0, babel-code-frame@^6.22.0, babel-code-frame@^6.26.0:
     esutils "^2.0.2"
     js-tokens "^3.0.2"
 
-babel-core@^6.26.0, "babel-core@npm:babel-core@^6", "babel6@npm:babel-core@^6":
+babel-core@^6.26.0, "babel-core@npm:babel-core@^6":
   version "6.26.3"
   resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-6.26.3.tgz#b2e2f09e342d0f0c88e2f02e067794125e75c207"
   integrity sha512-6jyFLuDmeidKmUEb3NM+/yawG0M2bDZ9Z1qbZP59cyHLz8kYGKYwpJP0UwUKKUiTRNvxfLesJnTedqczP7cTDA==
@@ -3100,20 +3099,81 @@ babel-types@^6.19.0, babel-types@^6.23.0, babel-types@^6.24.1, babel-types@^6.26
     trim-right "^1.0.0"
     try-resolve "^1.0.0"
 
-"babylon5@npm:babylon@^5", babylon@^5.8.38:
+"babel6@npm:babel-core@^6":
+  version "6.26.3"
+  resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-6.26.3.tgz#b2e2f09e342d0f0c88e2f02e067794125e75c207"
+  integrity sha512-6jyFLuDmeidKmUEb3NM+/yawG0M2bDZ9Z1qbZP59cyHLz8kYGKYwpJP0UwUKKUiTRNvxfLesJnTedqczP7cTDA==
+  dependencies:
+    babel-code-frame "^6.26.0"
+    babel-generator "^6.26.0"
+    babel-helpers "^6.24.1"
+    babel-messages "^6.23.0"
+    babel-register "^6.26.0"
+    babel-runtime "^6.26.0"
+    babel-template "^6.26.0"
+    babel-traverse "^6.26.0"
+    babel-types "^6.26.0"
+    babylon "^6.18.0"
+    convert-source-map "^1.5.1"
+    debug "^2.6.9"
+    json5 "^0.5.1"
+    lodash "^4.17.4"
+    minimatch "^3.0.4"
+    path-is-absolute "^1.0.1"
+    private "^0.1.8"
+    slash "^1.0.0"
+    source-map "^0.5.7"
+
+"babel7@npm:@babel/core@^7":
+  version "7.19.0"
+  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.19.0.tgz#d2f5f4f2033c00de8096be3c9f45772563e150c3"
+  integrity sha512-reM4+U7B9ss148rh2n1Qs9ASS+w94irYXga7c2jaQv9RVzpS7Mv1a9rnYYwuDa45G+DkORt9g6An2k/V4d9LbQ==
+  dependencies:
+    "@ampproject/remapping" "^2.1.0"
+    "@babel/code-frame" "^7.18.6"
+    "@babel/generator" "^7.19.0"
+    "@babel/helper-compilation-targets" "^7.19.0"
+    "@babel/helper-module-transforms" "^7.19.0"
+    "@babel/helpers" "^7.19.0"
+    "@babel/parser" "^7.19.0"
+    "@babel/template" "^7.18.10"
+    "@babel/traverse" "^7.19.0"
+    "@babel/types" "^7.19.0"
+    convert-source-map "^1.7.0"
+    debug "^4.1.0"
+    gensync "^1.0.0-beta.2"
+    json5 "^2.2.1"
+    semver "^6.3.0"
+
+"babylon5@npm:babylon@^5":
   version "5.8.38"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-5.8.38.tgz#ec9b120b11bf6ccd4173a18bf217e60b79859ffd"
   integrity sha1-7JsSCxG/bM1Bc6GL8hfmC3mFn/0=
 
-"babylon6@npm:babylon@^6", babylon@^6.17.0, babylon@^6.18.0, babylon@^6.8.0:
+"babylon6@npm:babylon@^6":
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.18.0.tgz#af2f3b88fa6f5c1e4c634d1a0f8eac4f55b395e3"
   integrity sha512-q/UEjfGJ2Cm3oKV71DJz9d25TPnq5rhBVL2Q4fA5wcC3jcrdn7+SssEybFIxwAvvP+YCsCYNKughoF33GxgycQ==
+
+"babylon7@npm:@babel/parser@^7":
+  version "7.19.0"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.19.0.tgz#497fcafb1d5b61376959c1c338745ef0577aa02c"
+  integrity sha512-74bEXKX2h+8rrfQUfsBfuZZHzsEs6Eql4pqy/T4Nn6Y9wNPggQOqD6z6pn5Bl8ZfysKouFZT/UXEH94ummEeQw==
 
 babylon@7.0.0-beta.44:
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-7.0.0-beta.44.tgz#89159e15e6e30c5096e22d738d8c0af8a0e8ca1d"
   integrity sha512-5Hlm13BJVAioCHpImtFqNOF2H3ieTOHd0fmFGMxOJ9jgeFqeAwsv3u5P5cR7CSeFrkgHsT19DgFJkHV0/Mcd8g==
+
+babylon@^5.8.38:
+  version "5.8.38"
+  resolved "https://registry.yarnpkg.com/babylon/-/babylon-5.8.38.tgz#ec9b120b11bf6ccd4173a18bf217e60b79859ffd"
+  integrity sha1-7JsSCxG/bM1Bc6GL8hfmC3mFn/0=
+
+babylon@^6.17.0, babylon@^6.18.0, babylon@^6.8.0:
+  version "6.18.0"
+  resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.18.0.tgz#af2f3b88fa6f5c1e4c634d1a0f8eac4f55b395e3"
+  integrity sha512-q/UEjfGJ2Cm3oKV71DJz9d25TPnq5rhBVL2Q4fA5wcC3jcrdn7+SssEybFIxwAvvP+YCsCYNKughoF33GxgycQ==
 
 bail@^1.0.0:
   version "1.0.5"
