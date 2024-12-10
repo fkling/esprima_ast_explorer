@@ -271,13 +271,22 @@ module.exports = Object.assign({
       /flow-parser\/flow_parser\.js/,
     ],
   },
-
+  resolve: {
+    alias: {
+      'node:fs': 'fs',
+      'node:constants': 'constants',
+      'node:tty': 'tty',
+      'node:child_process': 'child_process',
+    },
+  },
   node: {
     child_process: 'empty',
     fs: 'empty',
     module: 'empty',
     net: 'empty',
     readline: 'empty',
+    tty: 'empty',
+    constants: 'empty',
   },
 
   plugins: plugins,

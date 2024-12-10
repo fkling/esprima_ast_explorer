@@ -6,6 +6,6 @@ export default {
   ...config,
   id: ID,
   parse: function(parser, code) {
-    return parser.parseOcaml(code);
+    return JSON.parse(parser.parseOcaml(code));
   },
 };
